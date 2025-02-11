@@ -11,6 +11,9 @@ const config: Config = {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
       },
+      fontFamily: {
+        sans: ['var(--font-pretendard)'],
+      },
     },
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports
