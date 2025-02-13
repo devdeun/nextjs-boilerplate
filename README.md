@@ -3,6 +3,7 @@
 ## Tech Stack
 
 - NextJS 14
+- React 18
 - TypeScript
 - TailwindCSS
 - Prettier
@@ -14,6 +15,9 @@
 ```
 # Install dependencies
 npm install
+
+# Initialize Git repository (Required for Lefthook)
+git init
 
 # Install git hooks
 npx lefthook install
