@@ -22,7 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={pretendard.variable}>
-      <body className="font-sans">{children}</body>
+      <body className="bg-[#ffffff] font-sans">
+        <main className="relative mx-auto h-dvh w-full max-w-[400px] bg-background px-4 sm:w-[400px]">
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
