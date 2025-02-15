@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 
+import QueryProvider from '@/shared/query/provider'
+
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -23,9 +25,11 @@ export default function RootLayout({
   return (
     <html lang="ko" className={pretendard.variable}>
       <body className="bg-[#ffffff] font-sans">
-        <main className="relative mx-auto h-dvh w-full max-w-[400px] bg-background px-4 sm:w-[400px]">
-          {children}
-        </main>
+        <QueryProvider>
+          <div className="relative mx-auto h-dvh w-full max-w-[400px] bg-background px-4 sm:w-[400px]">
+            {children}
+          </div>
+        </QueryProvider>
       </body>
     </html>
   )
