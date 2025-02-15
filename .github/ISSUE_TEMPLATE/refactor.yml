@@ -1,7 +1,7 @@
 name: Refactor
 description: 리팩토링이 필요한가요?
 title: '[Refactor] '
-labels: ['🔨 Refactor']
+labels: ['♻️ Refactor']
 # projects: ['']
 body:
   - type: textarea

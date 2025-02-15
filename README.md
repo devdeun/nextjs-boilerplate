@@ -25,3 +25,15 @@ npx lefthook install
 # Start development server
 npm run dev
 ```
+
+## Issue Label
+
+```bash
+npx github-label-sync --access-token {access-token} --labels ./.github/labels.json {repository}
+```
+
+example
+
+```bash
+npx github-label-sync --access-token ghp-MYTOKEN --labels ./.github/labels.json devdeun/nextjs-boilerplate
+```

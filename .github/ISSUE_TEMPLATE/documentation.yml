@@ -1,7 +1,7 @@
 name: Documentation
 description: 문서 추가/수정/삭제가 필요한가요?
 title: '[Docs] '
-labels: ['📃 Docs']
+labels: ['📝 Docs']
 # projects: ['']
 body:
   - type: textarea
