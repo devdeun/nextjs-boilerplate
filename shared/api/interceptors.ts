@@ -1,25 +1,4 @@
-import { AxiosError, AxiosResponse } from 'axios'
-
-interface ApiResponse<ResultType> {
-  isSuccess: boolean
-  code: string
-  message: string
-  result: ResultType
-}
-
-export const responseInterceptor = <ResultType>(
-  response: AxiosResponse<ApiResponse<ResultType>>,
-) => {
-  const apiResponse = response.data
-
-  if (!apiResponse.isSuccess) {
-    const error = new Error(apiResponse.message)
-    error.name = apiResponse.code
-    throw error
-  }
-
-  return apiResponse.result
-}
+import { AxiosError } from 'axios'
 
 export const errorInterceptor = (error: AxiosError) => {
   if (error.response) {
